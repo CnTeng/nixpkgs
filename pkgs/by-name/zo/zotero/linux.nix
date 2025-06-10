@@ -20,6 +20,7 @@
   libgbm,
   pango,
   pciutils,
+  libpulseaudio,
 }:
 
 stdenv.mkDerivation rec {
@@ -57,6 +58,7 @@ stdenv.mkDerivation rec {
       libgbm
       pango
       pciutils
+      libpulseaudio
     ]
     + ":"
     + lib.makeSearchPathOutput "lib" "lib" [ stdenv.cc.cc ];
